@@ -7,8 +7,8 @@ import LottaryImg from "../assets/LottaryImg.jpg";
 import weather from "../assets/weather.jpg";
 import Scooter from "../assets/Scooter.jpg";
 import Ecommerce from "../assets/E-commerc.jpg";
-
 import Card from "./Card";
+
 const Projects = () => {
   return (
     <>
@@ -32,7 +32,8 @@ const Projects = () => {
             <Card
               image={Ecommerce}
               imageLink={"#"}
-              content={"(Next.Js & Tailwindcss) E-commerce App Coming Soon"}
+              content={"(Next.Js & Tailwindcss) E-commerce App"}
+              subContent={'Coming Soon'}
             />
           {/* color piker app card */}
           <Card

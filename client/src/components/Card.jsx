@@ -1,6 +1,6 @@
 import React from "react";
 import { HiMiniArrowRight } from "react-icons/hi2";
-const Card = ({ image, content, imageLink }) => {
+const Card = ({ image, content, subContent, imageLink }) => {
   return (
     <>
       <a
@@ -63,6 +63,7 @@ const Card = ({ image, content, imageLink }) => {
     <div className="relative mt-4 flex items-center justify-between gap-3">
       <p className="text-sm sm:text-base text-white leading-relaxed line-clamp-2">
         {content}
+        <span className="text-sm sm:text-base text-rose-500 leading-relaxed ml-1 font-bold">{subContent}</span>
       </p>
 
       {/* Fake Button (visual only) */}
