@@ -31,8 +31,9 @@ const Hero = () => {
                 Contact Me
               </a>
               <a
-                href="/Liton_Chandra_Das_Resume.pdf"
-                download="Liton_Chandra_Das_Resume.pdf"
+                href="/Liton-Resume.pdf"
+                target="_blank"
+                download="Liton-Resume.pdf"
                 className="px-6 py-3 border border-teal-500 text-teal-400 rounded-xl hover:bg-teal-500 hover:text-black transition"
               >
                 Download Resume
@@ -41,7 +42,7 @@ const Hero = () => {
           </div>
 
           {/* Right GIF */}
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             <img
               src="https://cdn-blog.scalablepath.com/uploads/2022/09/github-copilot-vscode-permissions-suggestions.gif"
               alt="Developer working animation"
