@@ -24,7 +24,7 @@ const Projects = () => {
           <Card
             image={ColorPiker}
             imageLink={"https://liton-das.github.io/favorite-color-picker/"}
-            content={"(Vanilla JS) Color Picker App"}
+            content={"(Vanila JS) Color Picker App"}
           />
           {/* contact todo app card */}
           <Card
@@ -55,7 +55,7 @@ const Projects = () => {
           <Card
             image={Scooter}
             imageLink={"https://liton-das.github.io/scooter_ui_design/"}
-            content={"(Vanilla JS & HTML) Scooter App"}
+            content={"(Vanila JS & HTML) Scooter App"}
           />
         </div>
       </section>
