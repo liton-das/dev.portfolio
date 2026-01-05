@@ -6,6 +6,8 @@ import ColorPiker from "../assets/ColorPiker.jpg";
 import LottaryImg from "../assets/LottaryImg.jpg";
 import weather from "../assets/weather.jpg";
 import Scooter from "../assets/Scooter.jpg";
+import Ecommerce from "../assets/E-commerc.jpg";
+
 import Card from "./Card";
 const Projects = () => {
   return (
@@ -20,6 +22,18 @@ const Projects = () => {
             imageLink={"https://cloud-snap-qb6l.vercel.app/"}
             content={"MERN app with Cloudinary image upload & delete."}
           />
+          {/* scooter card */}
+          <Card
+            image={Scooter}
+            imageLink={"https://liton-das.github.io/scooter_ui_design/"}
+            content={"(Vanila JS & HTML) Scooter App"}
+          />
+          {/* E-commerce App card */}
+            <Card
+              image={Ecommerce}
+              imageLink={"#"}
+              content={"(Next.Js & Tailwindcss) E-commerce App Coming Soon"}
+            />
           {/* color piker app card */}
           <Card
             image={ColorPiker}
@@ -49,13 +63,6 @@ const Projects = () => {
             image={weather}
             imageLink={"https://liton-das.github.io/weather-app/"}
             content={"(Vanila js and html) Weather App"}
-          />
-
-          {/* scooter card */}
-          <Card
-            image={Scooter}
-            imageLink={"https://liton-das.github.io/scooter_ui_design/"}
-            content={"(Vanila JS & HTML) Scooter App"}
           />
         </div>
       </section>
