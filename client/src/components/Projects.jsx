@@ -14,7 +14,7 @@ const allProjects=[
     id:1,
     image:CloudSnap,
     imageLink:"https://cloud-snap-qb6l.vercel.app/",
-    content:"MERN app with Cloudinary image upload & delete."
+    content:"(MERN-STACK) app with Cloudinary image upload & delete."
   },
   {
     id:2,
