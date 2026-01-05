@@ -1,33 +1,68 @@
 import React from "react";
 
-const Card = ({image,content,imageLink}) => {
+const Card = ({ image, content, imageLink }) => {
   return (
     <>
-      <div className=" p-4 sm:p-6 rounded-2xl bg-linear-to-r from-indigo-500 to-teal-400 dark:bg-white/5 backdrop-blur-lg border border-white/20 shadow-lg transition-transform duration-500 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl hover:shadow-cyan-500/50">
+      <div
+        className="
+    relative w-full max-w-sm mx-auto
+    p-4 sm:p-5 rounded-2xl
+    bg-white/15 backdrop-blur-2xl
+    border border-white/30
+    shadow-xl shadow-black/20
+    transition-all duration-300
+    hover:shadow-cyan-500/40
+    will-change-transform
+  "
+        onMouseMove={(e) => {
+          const card = e.currentTarget;
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = -(y - centerY) / 18;
+          const rotateY = (x - centerX) / 18;
+
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform =
+            "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+        }}
+      >
+        {/* Glow layer */}
+        <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-cyan-400/20 to-purple-500/20 blur-xl opacity-0 hover:opacity-100 transition"></div>
+
         {/* Image */}
-        <div className="w-full overflow-hidden rounded-xl">
+        <div className="relative w-full aspect-video overflow-hidden rounded-xl">
           <img
             src={image}
-            alt="Weather App UI"
-            className="w-full h-40 sm:h-48 md:h-52 object-cover rounded-xl hover:scale-105 transition duration-300"
+            alt="Project Preview"
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
           />
         </div>
 
-        <div className="flex items-center justify-between mt-3">
-            {/* Content */}
-        <p className="mt-4 text-sm text-white dark:text-gray-200">
-          {content}
-        </p>
+        {/* Content */}
+        <div className="relative mt-4 flex items-start justify-between gap-3">
+          <p className="text-sm sm:text-base text-white leading-relaxed line-clamp-2">{content}</p>
 
-        {/* Bottom Right Button */}
-        <a
-          href={imageLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex justify-center items-center py-1.25 px-2.25 text-sm font-semibold text-white bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-[5px] hover:bg-cyan-400 hover:scale-110 transition"
-        >
-          Live
-        </a>
+          <a
+            href={imageLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              shrink-0 px-3 py-1.5
+              text-xs sm:text-sm font-semibold text-white
+              rounded-md
+              bg-linear-to-r from-pink-500 to-rose-500
+              hover:scale-110
+              hover:shadow-lg hover:shadow-pink-500/50
+              transition-all
+            "
+          >
+            Live
+          </a>
         </div>
       </div>
     </>

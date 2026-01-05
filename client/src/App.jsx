@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 const App = () => {
   const [dark, setDark] = useState(true);
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Contact/>
         {/* Footer */}
         <Footer/>
+        <BackToTop/>
       </div>
     </div>
   )

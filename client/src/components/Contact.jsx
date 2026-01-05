@@ -29,7 +29,8 @@ const Contact = () => {
 
             {/* Email */}
             <a
-              href="mailto:litonchandra094@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=litonchandra094@gmail.com"
+              target="_blank"
               className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center
                rounded-lg border border-teal-400 text-teal-500
                hover:bg-teal-500 hover:text-white
@@ -41,7 +42,7 @@ const Contact = () => {
 
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/rj-raj-53b5322a3/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center
