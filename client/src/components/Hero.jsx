@@ -44,7 +44,7 @@ const Hero = () => {
           {/* Right GIF */}
           <div className="flex justify-center items-center">
             <img
-              src="https://cdn-blog.scalablepath.com/uploads/2022/09/github-copilot-vscode-permissions-suggestions.gif"
+              src="https://c.tenor.com/UttC4AITYR4AAAAd/full-stack-developer.gif"
               alt="Developer working animation"
               className="w-64 sm:w-80 md:w-96 object-contain animate-float rounded-lg"
             />
