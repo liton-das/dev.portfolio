@@ -13,7 +13,7 @@ const Card = ({ image, content, subContent, imageLink }) => {
     className="
       relative w-full
       p-4 sm:p-5 rounded-2xl
-      bg-white/15 backdrop-blur-2xl
+      bg-white/5 backdrop-blur-2xl
       border border-white/30
       shadow-xl shadow-black/20
       transition-all duration-300
@@ -71,15 +71,15 @@ const Card = ({ image, content, subContent, imageLink }) => {
         className="
           inline-flex items-center gap-1
           px-3 py-1.5
-          text-xs sm:text-sm font-semibold text-white
+          text-xs sm:text-sm font-semibold text-[#009af9]
           rounded-md
-          bg-linear-to-r from-pink-500 to-rose-500
+          bg-white
           hover:scale-110
           hover:shadow-lg hover:shadow-pink-500/50
           transition-all
         "
       >
-        Live <HiMiniArrowRight className="text-base" />
+        Link <HiMiniArrowRight className="text-base" />
       </span>
     </div>
   </div>
