@@ -13,8 +13,9 @@ const Card = ({ image, content, subContent, imageLink }) => {
     className="
       relative w-full
       p-4 sm:p-5 rounded-2xl
-      bg-white/5 backdrop-blur-2xl
-      border border-white/30
+      bg-linear-to-br from-slate-900 via-gray-900 to-gray-800
+      backdrop-blur-xl
+      border-r border-white/10
       shadow-xl shadow-black/20
       transition-all duration-300
       hover:shadow-cyan-500/40
