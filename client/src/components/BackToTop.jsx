@@ -37,7 +37,7 @@ const BackToTop = () => {
             hover:scale-110
             transition
             "
-        >
+          >
           <HiOutlineArrowUp size={22} />
         </button>
       )}

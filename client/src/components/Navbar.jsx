@@ -17,11 +17,11 @@ const Navbar = () => {
         {/* Logo */}
         <h2
           className="
-  text-xl font-bold text-teal-400
-  text-center py-6
-  tracking-wide
-  drop-shadow-[0_0_8px_rgba(45,212,191,0.6)]
-"
+            text-xl font-bold text-teal-400
+            text-center py-6
+            tracking-wide
+            drop-shadow-[0_0_8px_rgba(45,212,191,0.6)]
+            "
         >
           Dev.Liton Das
         </h2>
