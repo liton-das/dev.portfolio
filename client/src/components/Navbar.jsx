@@ -99,16 +99,64 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-6 text-sm">
-          <a href="#about" className="nav-link">
+          <a href="#about" className="nav-link relative
+              text-white
+              hover:text-teal-400
+              after:content-['']
+              after:absolute
+              after:left-0
+              after:-bottom-1
+              after:w-0
+              after:h-px
+              after:bg-sky-400
+              after:transition-all
+              after:duration-300
+              hover:after:w-full">
             About
           </a>
-          <a href="#skills" className="nav-link">
+          <a href="#skills" className="nav-link relative
+              text-white
+              hover:text-teal-400
+              after:content-['']
+              after:absolute
+              after:left-0
+              after:-bottom-1
+              after:w-0
+              after:h-px
+              after:bg-sky-400
+              after:transition-all
+              after:duration-300
+              hover:after:w-full">
             Skills
           </a>
-          <a href="#projects" className="nav-link">
+          <a href="#projects" className="nav-link relative
+              text-white
+              hover:text-teal-400
+              after:content-['']
+              after:absolute
+              after:left-0
+              after:-bottom-1
+              after:w-0
+              after:h-px
+              after:bg-sky-400
+              after:transition-all
+              after:duration-300
+              hover:after:w-full">
             Projects
           </a>
-          <a href="#contact" className="nav-link">
+          <a href="#contact" className="nav-link relative
+              text-white
+              hover:text-teal-400
+              after:content-['']
+              after:absolute
+              after:left-0
+              after:-bottom-1
+              after:w-0
+              after:h-px
+              after:bg-sky-400
+              after:transition-all
+              after:duration-300
+              hover:after:w-full">
             Contact
           </a>
 
