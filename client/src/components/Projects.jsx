@@ -8,6 +8,8 @@ import weather from "../assets/weather.jpg";
 import Scooter from "../assets/Scooter.jpg";
 import Ecommerce from "../assets/E-commerc.jpg";
 import TaskTodo from "../assets/TaskTodo.jpg";
+import Restaurant from '../assets/Restaurant.jpg'
+import Ai from '../assets/Ai.jpg'
 import Card from "./Card";
 const allProjects = [
   {
@@ -17,50 +19,64 @@ const allProjects = [
     content: "(MERN-STACK) app with Cloudinary image upload & delete.",
   },
   {
+    id: 3,
+    image: Restaurant,
+    imageLink: "https://restaurant-blond-gamma.vercel.app/",
+    content: "(React Project) Restaurant App",
+    subContent: "Runnig Project",
+  },
+  {
+    id: 4,
+    image: Ai,
+    imageLink: "https://ai-tau-weld.vercel.app/",
+    content: "(React & Gemini-Api) Ai App",
+    subContent: "Coming Soon",
+  },
+  {
     id: 2,
     image: Scooter,
     imageLink: "https://liton-das.github.io/scooter_ui_design/",
     content: "(Vanila JS & HTML) Scooter App",
   },
   {
-    id: 3,
+    id: 5,
     image: Ecommerce,
     imageLink: "#",
     content: "(Next.Js & Tailwindcss) E-commerce App",
     subContent: "Coming Soon",
   },
   {
-    id: 4,
+    id: 6,
     image: ColorPiker,
     imageLink: "https://liton-das.github.io/favorite-color-picker/",
     content: "(Vanila JS) Color Picker App",
   },
   {
-    id: 5,
+    id: 7,
     image: ContactTodo,
     imageLink: "https://contact-app-six-henna.vercel.app/",
     content: "(React App) Contact Todo App.",
   },
   {
-    id: 6,
+    id: 8,
     image: TodoImg,
     imageLink: "https://liton-das.github.io/simple-todo/",
     content: "Todo App",
   },
   {
-    id: 7,
+    id: 9,
     image: LottaryImg,
     imageLink: "https://liton-das.github.io/lottery_system/",
     content: "(Vanila js and html) swap App",
   },
   {
-    id: 8,
+    id: 10,
     image: TaskTodo,
     imageLink: "https://liton-das.github.io/task-management/",
     content: "(Vanila js and html) Task Todo App",
   },
   {
-    id: 9,
+    id: 11,
     image: weather,
     imageLink: "https://liton-das.github.io/weather-app/",
     content: "(Vanila js and html) Weather App",
